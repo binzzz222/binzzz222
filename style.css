@@ -1,0 +1,163 @@
+body {
+    background-color: pink;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 40px;
+}
+
+.nav > h1 {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    background-color: white;
+}
+
+.nav > span {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 30px;
+}
+
+.nav > button {
+    justify-content: center;
+}
+
+.button {
+    --bg: #000;
+    --hover-bg: #ff90e8;
+    --hover-text: #000;
+    color: rgb(255, 0, 0);
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+    width: 100px;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+  
+  .button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem,-0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  
+  .button:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+
+#gombal {
+    text-align: center;
+    margin-top: -20px
+}
+
+i {
+    animation: glow 2.5s ease-in-out infinite;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+
+}
+
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+    }
+    10%, 90%{
+        color: #111;
+        text-shadow: none;
+    }
+}
+
+i:nth-child(2){
+    animation-delay: .2s ;
+}
+i:nth-child(3){
+    animation-delay: .4s ;
+}
+i:nth-child(4){
+    animation-delay: .6s;
+}
+i:nth-child(5){
+    animation-delay: .8s;
+}
+
+.nanya {
+    margin-top: 200px;
+    background-color: #000;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    flex-direction: column;
+    display: flex;
+}
+
+.nanya > h2 {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-family: 'Secular One', sans-serif;
+}
+
+.nanya > span {
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.ask {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+.ask > a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    width: 60px;
+    border-radius: 4px;
+}
+
+.tom1 {
+    margin-left: -5px;
+}
+
+.tom2 {
+    margin-left: 100px;
+}
+
+.tom1:hover {
+    background-color: green;
+}
+
+.tom2:hover {
+    background-color: red;
+}

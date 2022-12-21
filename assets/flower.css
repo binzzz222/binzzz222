@@ -1,0 +1,58 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/textured_paper_%402X.png);
+    background-blend-mode: multiply;
+    background-color: pink;
+    background-repeat: repeat;
+    background-size: 800px;
+  }
+  
+  svg {
+    height: 80vh;
+    width: 100%;
+    margin-top: 10vh;
+    opacity: 0.9
+  }
+  
+  #illustration {
+     animation: squigglevision 0.5s infinite alternate;
+  }
+  
+  @keyframes squigglevision {
+    0% {
+      filter: url('#sketch-0');
+    }
+    25% {
+      filter: url('#sketch-1');
+    }
+    50% {
+      filter: url('#sketch-2');
+    }
+    75% {
+      filter: url('#sketch-3');
+    }
+    100% {
+      filter: url('#sketch-4');
+    }
+  }
+  
+  .path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: paint 1s ease-in-out 1s forwards;
+  }
+  
+  .path:nth-of-type(2) {
+    animation-delay: 2s;
+  }
+  
+  @keyframes paint {
+    from {
+      stroke-dashoffset: 1; 
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/love.png">
+    <title>Gombal ceritanya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="nav">
+        <h1>HAYO BINGUNG YA<br>
+        INI APAAN HEHEHE</h1>
+        <span>coba kamu click <font color="red">❤</font> dibawah</span>
+
+        <button class="button" onclick="tombol()">❤</button>
+
+
+    </div>
+
+    <div id="gombal" style="display: none;">
+        <i>SCROLL KE BAWAH</i>
+    <div class="nanya">
+        <h2>Jadi aku tuh punya sesuatu</h2>
+        <span>Mau tau engga?</span>
+
+        <div class="ask">
+            <a href="assets/jawaban.html" class="tom1">Mau</a>
+            <a class="tom2" onclick="alert('Kok gamau sih😡')">Gamau</a>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+
+
+
+
+<script>
+
+    function tombol() {
+        var x = document.getElementById('gombal');
+        if (x.style.display === 'block') {
+            x.style.display = 'none';
+        } else {
+            x.style.display = 'block'
+        }
+    }
+
+
+</script>
+
+
+
+
+</html>
